@@ -61,5 +61,7 @@ impl Solution {
 }
 
 fn main() {
-    println!("Hello, world!");
+    Solution {
+
+    };
 }
