@@ -25,6 +25,8 @@
 //     0 <= Node.val <= 9
 //     It is guaranteed that the list represents a number that does not have leading zeros.
 
+// 0ms
+
 
 struct Solution {
 
@@ -63,7 +65,7 @@ impl Solution {
                         val: sum
                     }))
                 } else {
-                    // sum % 10 always = 1 (carry), add all three with 2 calls
+                    // sum // 10 always = 1 (carry), add all three with 2 calls
                     let carry = Some(Box::new(ListNode::new(1)));
                     Some(Box::new(ListNode {
                         next: Solution::add_two_numbers(Solution::add_two_numbers(carry, n1.next), n2.next),
