@@ -61,7 +61,6 @@ impl Solution {
 }
 
 fn main() {
-    Solution {
-
-    };
+    let answer = Solution::two_sum(vec![3,2,4], 6);
+    println!("{answer:?}");
 }

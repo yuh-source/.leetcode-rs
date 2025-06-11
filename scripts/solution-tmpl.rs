@@ -7,7 +7,6 @@ impl Solution {
 }
 
 fn main() {
-    Solution {
-
-    };
+    let answer = Solution::smth
+    println!("{answer:?}");
 }
